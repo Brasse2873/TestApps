@@ -1,0 +1,13 @@
+WCF Test Client (WcfTestClient.exe)
+===================================
+
+- Service properties/Debug
+  * Parameters: 
+     /client:<pathAndNameToClientApp>
+     /clientArgs:<argumentsToBePassedToClientApp>
+
+
+Example:/client:wcftestclient.exe /clientargs:"http://localhost:8733/"
+
+Normal use:
+"C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\Wcftestclient.exe" "http://localhost:8733/"

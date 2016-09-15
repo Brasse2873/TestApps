@@ -1,0 +1,14 @@
+WCF Service Host (WcfSvcHost.exe)
+================================
+
+- Service properties/Debug/Start external program:C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\WcfSvcHost.exe
+
+- Parameters: 
+  /service:<pathAndNameToServiceDll>
+  /config:<pathAndNameToServiceConfig>
+  Optional if Clien should be started
+     /client:<pathAndNameToClientApp>
+     /clientArgs:<argumentsToBePassedToClientApp>
+
+Normal use:
+"C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\WcfSvcHost.exe" /service:BasicService.Dll /config:BasicService.config 
