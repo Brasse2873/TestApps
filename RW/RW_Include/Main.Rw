@@ -1,0 +1,29 @@
+.NAME       RW_Include
+.OUTPUT     'RW_Include.csv'
+
+.PAGEWIDTH 800
+.PAGELENGTH 0
+.NOFIRSTFF
+
+.DECLARE
+  fromDate = DATE,
+  tomDate = DATE
+
+.HEADER REPORT
+  .PRINT 'RW Include test report'
+  .NEWLINE
+
+.FOOTER REPORT
+
+.INCLUDE Level1.Rw    
+
+.QUERY
+  select 
+    CustCount
+  from 
+    session.level1
+  
+.DETAIL
+  .PRINT                      
+    "CustCount=",CustCount
+  .NEWLINE

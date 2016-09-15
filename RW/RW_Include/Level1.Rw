@@ -1,0 +1,13 @@
+
+.SETUP
+  DECLARE GLOBAL TEMPORARY TABLE session.level1 AS 
+  select  
+    count(*) as CustCount
+  from 
+    cust_mast
+  where
+    beg_serv_date >= '$fromDate'
+    and
+    beg_serv_date <= '$tomDate'   
+  ON COMMIT PRESERVE ROWS WITH NORECOVERY;
+
