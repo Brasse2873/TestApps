@@ -1,0 +1,8 @@
+﻿<Window x:Class="CS_MVVM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="118.889" Width="206.111">
+    <Grid>
+        <Button Click="Button_Click">New MyView</Button>
+    </Grid>
+</Window>

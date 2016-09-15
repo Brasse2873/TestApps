@@ -1,0 +1,13 @@
+﻿<Window x:Class="CS_MVVM_3.MyView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:myViewModel="clr-namespace:MyViewModel;assembly=MyViewModel"
+        Title="MyView" Height="83" Width="274">
+    <Window.Resources>
+        <myViewModel:MyViewModel x:Key="vm" txtModelData="Empy field"/>
+    </Window.Resources>
+    <StackPanel>
+        <TextBox Text="{Binding txtModelData, Source={StaticResource vm}}" />
+        <Button Command="{Binding BtnCmd, Mode=OneWay, Source={StaticResource vm}}" Content="DoAction"/>
+    </StackPanel>
+</Window>

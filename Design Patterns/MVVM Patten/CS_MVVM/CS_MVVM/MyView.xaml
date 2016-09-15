@@ -1,0 +1,19 @@
+﻿<Window x:Class="CS_MVVM.MyView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:myViewModel="clr-namespace:MyViewModel;assembly=MyViewModel"
+        Title="MyView" Height="115" Width="195">
+    <Window.Resources>
+        <myViewModel:MyViewModel x:Key="vm" txtIntProp="0" txtStrProp="Empty String"/>
+    </Window.Resources>
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="strProp"/>
+            <TextBox Name="txtStrProp" Text="{Binding txtStrProp, Source={StaticResource vm}}"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="intProp"/>
+            <TextBox Name="txtIntProp" Text="{Binding txtIntProp, Source={StaticResource vm}}"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
