@@ -1,0 +1,19 @@
+﻿<Window x:Class="GroupBoxTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <DockPanel LastChildFill="False">
+        <GroupBox Header="Group 1 header" DockPanel.Dock="Top">
+            <StackPanel>
+                <CheckBox>Check1</CheckBox>
+                <CheckBox>Check2</CheckBox>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Group 2 header" DockPanel.Dock="Top">
+            <StackPanel>
+                <CheckBox>Check3</CheckBox>
+                <CheckBox>Check4</CheckBox>
+            </StackPanel>                
+        </GroupBox>
+    </DockPanel>
+</Window>

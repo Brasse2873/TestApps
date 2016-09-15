@@ -1,0 +1,34 @@
+﻿<Window x:Class="WrapPanelTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <UniformGrid Rows="2" Columns="2">
+        <WrapPanel Name="WrapPanelProperties"
+            ItemHeight="30"
+            ItemWidth="50"
+            Orientation="Horizontal">            
+        </WrapPanel>
+        
+        <WrapPanel Margin="10">
+            <Button Content="Button1.1"/>
+            <Button Content="Button1.2"/>
+            <Button Content="Button1.2"/>
+            <Button Content="Button1.2"/>
+            <Button Content="Button1.2"/>
+        </WrapPanel>
+        <WrapPanel Margin="10">
+            <Button Content="Button2.1"/>
+            <TextBlock Text="Bla Bla varför blir det inte flera rader?"/>
+        </WrapPanel>
+        <WrapPanel Margin="10">
+            <Button Content="Button1"/>
+            <ListBox>
+                <ListBoxItem>Item1</ListBoxItem>
+                <ListBoxItem>Item2</ListBoxItem>
+                <ListBoxItem>Item3</ListBoxItem>
+                <ListBoxItem>Item4</ListBoxItem>
+                <ListBoxItem>Item5</ListBoxItem>
+            </ListBox>
+        </WrapPanel>
+    </UniformGrid>
+</Window>

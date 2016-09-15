@@ -1,0 +1,62 @@
+﻿<Window x:Class="ControlTemplateTest.ButtonTemplateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ButtonTemplateWindow" Height="300" Width="300">
+    <Window.Resources>
+
+        <!--simpleButtonTemplate is a simple ControlTemplate for a button-->
+        <ControlTemplate x:Key="simpleButtonTemplate" TargetType="{x:Type Button}">
+            <Border BorderThickness="5">
+                <Border.BorderBrush>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="Yellow" Offset="0"/>
+                        <GradientStop Color="Red" Offset="0.5"/>
+                        <GradientStop Color="Blue" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.BorderBrush>
+                <Grid>
+                    <Rectangle Fill="LightGray" />
+                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Grid>
+            </Border>
+        </ControlTemplate>
+        
+        <!--ControlTemplated with TemplateBinding-->
+        <ControlTemplate x:Key="templateBindedButtonTemplate" TargetType="{x:Type Button}">
+            <Border BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}">
+                <Grid>
+                    <Rectangle Fill="{TemplateBinding Background}"/>
+                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+        </ControlTemplate>
+    </Window.Resources>
+    
+    
+    
+    <StackPanel>
+        <!--ControlTemplate defined inline-->
+        <Button Name="BasicButton" Click="Button_Click_1">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border BorderBrush="Red"  BorderThickness="5" >
+                        <Grid>
+                            <Rectangle Fill="AliceBlue"/>
+                            <Ellipse Fill="Yellow"/>
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+            ControlTemplete defined inline
+        </Button>
+
+        <!--ControlTemplate from resource-->
+        <Button Template="{StaticResource simpleButtonTemplate}">ControlTemplet from a resource</Button>
+
+        <!--ControlTemplate with TemplateBinding. NOTE! TemplateBinding doesn't support freezable object when used in triggers-->
+        <Button Template="{StaticResource templateBindedButtonTemplate}" BorderThickness="2" Background="AliceBlue" BorderBrush="Black" >
+            ControlTemplate widh binded properties
+        </Button>
+    </StackPanel>
+</Window>

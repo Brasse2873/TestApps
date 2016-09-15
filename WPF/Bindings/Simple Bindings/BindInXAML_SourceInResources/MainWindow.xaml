@@ -1,0 +1,15 @@
+﻿<Window x:Class="BindInXAML_SourceInResources.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.Resources>
+            <!--Todo 1: Declare and create an object-->
+            <system:String x:Key="myString">This is my strings value</system:String>
+        </Grid.Resources>
+
+        <!--Bind the source to the c:Key name of the resource. Path not necsessary for strings -->
+        <TextBlock Text="{Binding Source={StaticResource myString}}"/>
+    </Grid>
+</Window>

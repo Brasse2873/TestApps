@@ -1,0 +1,34 @@
+﻿<Window x:Class="ExpanderTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <Expander Name="ExpanderProperties"
+                  ExpandDirection="Right"
+
+                  
+                  Header="All properties"
+                  Content="Content of ExpanderProperties"
+                  BorderBrush="Black"
+                  />
+        <Expander ExpandDirection="Left" Header="Direction Left" BorderBrush="Chocolate">
+            Direction Left content
+        </Expander>
+        <Expander ExpandDirection="Up" Header="Direction up" BorderBrush="Green">
+            Direction UP content
+        </Expander>
+        <Expander ExpandDirection="Right" Header="Direction Right" BorderBrush="Blue">
+            Direction Right content
+        </Expander>
+        <Expander ExpandDirection="Down" Header="Direction Down" BorderBrush="Aqua">
+            Direction Down content
+        </Expander>
+        <Expander Header="Expander 2 header"  BorderBrush="Red">
+            <StackPanel Orientation="Horizontal">
+                <Button>Button1</Button>
+                <Button>Button2</Button>
+                <Button>Button3</Button>
+            </StackPanel>
+        </Expander>
+    </StackPanel>
+</Window>

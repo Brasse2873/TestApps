@@ -1,0 +1,8 @@
+﻿<Window x:Class="FrameTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Frame HorizontalAlignment="Stretch" Name="frame1" VerticalAlignment="Stretch" Source="http://www.logica.se" Margin="20"/>
+    </Grid>
+</Window>

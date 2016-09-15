@@ -1,0 +1,71 @@
+﻿<Window x:Class="GeometryTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="492" Width="569">
+    <Grid>
+        <Canvas>
+            <Path Stroke="Black" Fill="Aqua" Canvas.Left="20" Canvas.Top="20">                    
+                <Path.Data>
+                    <EllipseGeometry Center="30,70" RadiusX="10" RadiusY="60"/>
+                </Path.Data>
+            </Path>
+            
+            <Path Stroke="Black" Canvas.Left="100" Canvas.Top="20">
+                <Path.Data>
+                    <LineGeometry StartPoint="0,0" EndPoint="30,30"/>
+                </Path.Data>
+            
+            </Path>
+                <Path Stroke="Black" Fill="Aqua" Canvas.Left="150" Canvas.Top="20">
+            </Path>
+            
+            <Path Stroke="Black" Fill="Bisque" Canvas.Left="300" Canvas.Top="20">
+                <Path.Data>
+                    <GeometryGroup FillRule="EvenOdd" >
+                        <EllipseGeometry Center="70,20" RadiusX="60" RadiusY="10"/>
+                        <EllipseGeometry Center="60,10" RadiusX="60" RadiusY="10"/>
+                        <RectangleGeometry Rect="20,20,65,45" />
+                    </GeometryGroup>
+                </Path.Data>
+            </Path>
+            
+            <Path Stroke="Black" Fill="BlanchedAlmond" Canvas.Left="20" Canvas.Top="200">
+                <Path.Data>
+                    <CombinedGeometry GeometryCombineMode="Exclude">
+                        <CombinedGeometry.Geometry1>
+                            <EllipseGeometry Center="20,20" RadiusX="30" RadiusY="50"/>
+                        </CombinedGeometry.Geometry1>
+                        <CombinedGeometry.Geometry2>
+                            <EllipseGeometry Center="40,40" RadiusX="30" RadiusY="50"/>
+                        </CombinedGeometry.Geometry2>
+                    </CombinedGeometry>
+                </Path.Data>
+            </Path>
+            <Button Content="Micke" Canvas.Left="196" Canvas.Top="170" Width="100" Height="100">
+                <Button.Clip>
+                    <RectangleGeometry RadiusX="25" RadiusY="25" Rect="10,10,80,80"/>
+                </Button.Clip>
+            </Button>
+            <Button Content="Hej Hopp" 
+                Width="80"
+                Height="80"
+                Canvas.Left="320" Canvas.Top="170">
+                <Button.Clip>
+                    <PathGeometry>
+                        <PathFigure StartPoint="2,2">
+                            <LineSegment Point="20,20"/>
+                            <LineSegment Point="40,0"/>
+                            <LineSegment Point="60,20"/>
+                            <LineSegment Point="78,40"/>
+                            <LineSegment Point="70,78"/>
+                            <LineSegment Point="40,60"/>
+                            <LineSegment Point="20,78"/>
+                            <LineSegment Point="2,40"/>
+                        </PathFigure>
+                    </PathGeometry>
+                </Button.Clip>
+            </Button>
+
+        </Canvas>
+    </Grid>
+</Window>

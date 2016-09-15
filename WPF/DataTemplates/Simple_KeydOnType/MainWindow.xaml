@@ -1,0 +1,39 @@
+﻿<Window x:Class="Simple_KeydOnType.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Simple_KeydOnType"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight"
+        DataContext="{Binding Source={x:Static system:Environment.OSVersion}}">
+    
+    <Window.Resources>
+        <!--ToDo 1: 1)Create DataTemplate in resources 2)Set DataType 3)Code how it should be presented-->
+        <DataTemplate DataType="{x:Type system:OperatingSystem}">
+            <Border BorderThickness="0.5" BorderBrush="Blue" Padding="5" Margin="1">
+            <StackPanel>
+                <TextBlock Text="{Binding Path=Platform}" />
+                <TextBlock Text="{Binding Path=ServicePack}"/>
+                <TextBlock Text="{Binding Path=Version}"/>
+                <TextBlock Text="{Binding Path=VersionString}"/>
+            </StackPanel>
+            </Border>
+        </DataTemplate>
+    </Window.Resources>
+    <StackPanel Margin="10" >
+        
+        <!-- ToDo 2: Bind to an instans of the Typ as stated in 'Template.DataType'. WPF finds the template for that Type automatically-->
+        <ContentControl Content="{Binding Source={x:Static system:Environment.OSVersion}}"/>
+
+        <!-- ToDo 2: Or use DataContext (Defined in Windows.Resources in this case). -->
+        <ContentControl  Content="{Binding}"/>
+        
+        <!-- Any content controll can be used. Example: -->
+        <Button Content="{Binding}"/>
+    </StackPanel>
+</Window>

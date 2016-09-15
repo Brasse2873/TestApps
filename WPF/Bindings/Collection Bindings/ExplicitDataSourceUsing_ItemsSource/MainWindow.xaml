@@ -1,0 +1,23 @@
+﻿<Window x:Class="ExplicitDataSourceUsing_ItemsSource.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExplicitDataSourceUsing_ItemsSource"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <!-- Todo 1: Set ItemsSource to a static collection -->
+        <ListBox ItemsSource="{x:Static Fonts.SystemFontFamilies}">
+            
+            <!-- Todo 2: Design how each item should appear (Template)-->
+            <ListBox.ItemTemplate>
+                <DataTemplate DataType="{x:Type FontFamily}">
+                    
+                    <!-- Bind to propery of an Item (in this case the whole object) -->
+                    <TextBlock Text="{Binding}" FontFamily="{Binding}" FontSize="30" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

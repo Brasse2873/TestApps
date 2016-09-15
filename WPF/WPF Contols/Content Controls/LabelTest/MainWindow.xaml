@@ -1,0 +1,15 @@
+﻿<Window x:Class="LabelTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel>
+        <TextBox Name="TextBox1">Textbox1 text</TextBox>
+        <Label Name="LabelProperties"
+               Target= "{ Binding ElementName=TextBox1}"
+            >Label_1</Label>
+
+        <TextBox Name="TextBox2">Textbox2 text</TextBox>
+        <Label 
+            Target="{Binding ElementName=TextBox2}">Lable_2</Label>
+    </StackPanel>
+</Window>

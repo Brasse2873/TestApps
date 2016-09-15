@@ -1,0 +1,33 @@
+﻿<Window x:Class="BindInXAML_ExplicitDataSource2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        Title="MainWindow" Height="133.431" Width="396.701">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Text="Platform:" VerticalAlignment="Center"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"
+        Text="{Binding Path=Platform, Source={x:Static system:Environment.OSVersion}}" />
+
+        <TextBlock Grid.Row="1" HorizontalAlignment="Left" Text="Version:" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"
+        Text="{Binding Path=Version ,Source={x:Static system:Environment.OSVersion}}" />
+
+        <TextBlock Grid.Row="2" HorizontalAlignment="Left" Text="Service Pack:" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"
+        Text="{Binding Path=ServicePack, Source={x:Static system:Environment.OSVersion}}" />
+
+        <TextBlock Grid.Row="3" HorizontalAlignment="Left" Text="Service Pack:" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"
+        Text="{Binding Path=VersionString, Source={x:Static system:Environment.OSVersion}}" />
+    </Grid>
+</Window>

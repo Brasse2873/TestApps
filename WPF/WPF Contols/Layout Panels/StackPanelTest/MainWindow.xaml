@@ -1,0 +1,49 @@
+﻿<Window x:Class="StackPanelTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <WrapPanel>
+        <Border BorderBrush="Blue" BorderThickness="2" Margin="20">
+            <StackPanel>
+                <Button Content="Button1"/>
+                <Button Content="Button2"/>
+                <CheckBox Content="Check1"/>
+                <CheckBox Content="Check2"/>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Red" BorderThickness="2" Margin="20
+                ">
+            <StackPanel >
+                <StackPanel>
+                    <Button Content="Button1"/>
+                    <Button Content="Button2"/>
+                </StackPanel>
+                <StackPanel>
+                    <CheckBox Content="Check1"/>
+                    <RadioButton Content="Radio1"/>
+                    <RadioButton Content="Radio2"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <Border BorderBrush="Green" BorderThickness="2" Margin="20">
+            <StackPanel>
+                <DockPanel LastChildFill="False">
+                    <Button DockPanel.Dock="Left" Content="Button1"/>
+                    <Button DockPanel.Dock="Top" Content="Button2"/>
+                    <Button DockPanel.Dock="Right" Content="Button3"/>
+                    <Button DockPanel.Dock="Bottom" Content="Button4"/>
+                </DockPanel>
+                <CheckBox Content="Check1"/>
+                <CheckBox Content="Check2"/>
+                <DockPanel LastChildFill="False">
+                    <Button DockPanel.Dock="Left" Content="Button1"/>
+                    <Button DockPanel.Dock="Top" Content="Button2"/>
+                    <Button DockPanel.Dock="Right" Content="Button3"/>
+                    <Button DockPanel.Dock="Bottom" Content="Button4"/>
+                </DockPanel>
+            </StackPanel>
+        </Border>
+    </WrapPanel>
+</Window>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="RadioButtonTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <UniformGrid Rows="4">
+        <RadioButton Name="radioButtonProperties"
+                     GroupName="group1"  
+                     
+                     IsThreeState="True">
+            RadiobButton1
+        </RadioButton>
+        <RadioButton GroupName="group1" Content="RadioButton2" IsChecked="{x:Null}" IsThreeState="True"/>
+        <RadioButton GroupName="group2" Content="RadioButton3" IsThreeState="True"/>
+        <RadioButton GroupName="group2" Content="Radiobutton4" IsChecked="True" IsThreeState="True"/>
+    </UniformGrid>
+</Window>

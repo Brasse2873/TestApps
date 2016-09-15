@@ -1,0 +1,29 @@
+﻿<Window x:Class="ScrollViewTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <ScrollViewer Name="Properties"
+                      CanContentScroll="True"
+                      HorizontalScrollBarVisibility="Visible"
+                      IsDeferredScrollingEnabled="False"
+                      VerticalScrollBarVisibility="Visible">
+            <TextBlock Width="100" Height="100" ScrollViewer.HorizontalScrollBarVisibility="Visible"
+                       ScrollViewer.VerticalScrollBarVisibility="Visible"
+                       ScrollViewer.CanContentScroll="True"
+                       >
+                1 asdlfkja
+                2 asdflasjdfl
+                3 asdfljalsdfj
+                4 asdfkadflj
+                5 asdflkjlk
+                6 adsfklj
+                7 asdfkljkl
+                8 asdflkjl
+                9 asdflklkj
+                10 adsfkljasdlfkj
+                11 asdlflaf                
+            </TextBlock>
+        </ScrollViewer>
+    </Grid>
+</Window>

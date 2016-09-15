@@ -1,0 +1,71 @@
+﻿<Window x:Class="GridTest.GridSplitterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="GridSplitterWindow" Height="388" Width="300" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <StackPanel>
+            <Grid ShowGridLines="True" Background="blue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="45"/>
+                </Grid.RowDefinitions>
+                <GridSplitter 
+                    Grid.Column="1" 
+                    VerticalAlignment="Stretch"
+                    HorizontalAlignment="Center"
+                    Background="Black" 
+                    Width="5" 
+                    />
+            </Grid>
+            
+            
+            <Grid ShowGridLines="True" Height="100" Background="Red">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>      
+                <GridSplitter Grid.Row="1" 
+                              HorizontalAlignment="Stretch" 
+                              VerticalAlignment="Center"
+                              Background="Black" 
+                              Height ="5"/>
+            </Grid>
+            
+            
+            <Grid Height="100" Background="Green" ShowGridLines="True">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>                
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <GridSplitter
+                    Grid.Column ="1"
+                    VerticalAlignment="Stretch"
+                    HorizontalAlignment="Center"
+                    Grid.RowSpan="3"                    
+                    Width="5"
+                    Background="Black"/>
+                <GridSplitter 
+                    Grid.Row="1"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Stretch"
+                    Grid.ColumnSpan="3"
+                    Height="5"
+                    Background="Black"/>
+            </Grid>
+        </StackPanel>            
+    </Grid>
+</Window>

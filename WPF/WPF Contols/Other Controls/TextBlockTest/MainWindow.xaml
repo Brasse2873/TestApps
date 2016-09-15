@@ -1,0 +1,42 @@
+﻿<Window x:Class="TextBlockTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525"
+        >
+    <UniformGrid Rows="3">
+        <TextBlock >
+            <TextBlock.Inlines>
+                <Run FontWeight="Bold">Bold text</Run>
+                <Run FontStyle="Italic">ItalicText</Run>
+                <Run TextDecorations="underline">Underline text</Run>
+                <LineBreak></LineBreak>
+                <Run>Normal text line 2</Run>
+            </TextBlock.Inlines>
+        </TextBlock>
+        
+        <TextBlock Background="Aqua"                   
+                   TextWrapping="Wrap"
+                   FontFamily="times new roman"
+                   >
+            <TextBlock.Inlines > <!--xml:space makes it posible to diplay cr/lf-->
+                <Run FontWeight="Bold">This is Bold text</Run>
+                <Run FontStyle ="Italic" >This is Italic text</Run>
+                <Run FontSize ="24" Foreground="Blue">Big blue text</Run>
+                <Run FontSize="18" Foreground="Red">A wery long text that should wrap. This text is displayed in red color</Run>
+            </TextBlock.Inlines>           
+        </TextBlock>
+
+        <ScrollViewer VerticalScrollBarVisibility="Visible">
+            <TextBlock >
+                <Run>Line 1</Run><LineBreak/>
+                <Run>Line 2</Run><LineBreak/>
+                <Run>Line 3</Run><LineBreak/>
+                <Run>Line 4</Run><LineBreak/>
+                <Run>Line 5</Run><LineBreak/>
+                <Run>Line 6</Run><LineBreak/>
+                <Run>Line 7</Run><LineBreak/>
+                <Run>Line 8</Run><LineBreak/>
+            </TextBlock>
+        </ScrollViewer>
+    </UniformGrid>
+</Window>

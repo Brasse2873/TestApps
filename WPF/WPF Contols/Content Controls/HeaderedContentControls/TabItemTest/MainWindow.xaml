@@ -1,0 +1,33 @@
+﻿<Window x:Class="TabItemTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <DockPanel>
+        <TabControl>
+            <TabItem Header="Tab 1" DockPanel.Dock="Top" HorizontalAlignment="Left">
+                <StackPanel>
+                    <Button>Button1</Button>
+                    <TextBlock>This is Tab 1</TextBlock>
+                </StackPanel>
+            </TabItem>
+
+            <TabItem Header="Tab 2" DockPanel.Dock="Top" HorizontalAlignment="Left">             
+                <TextBlock>This is Tab 2</TextBlock>
+            </TabItem>
+            
+            <TabItem HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/TabItemTest;component/Resources/Icon1.ico" Stretch="Uniform"></Image>
+                        <TextBlock>Tab3</TextBlock>                        
+                    </StackPanel>
+                </TabItem.Header>
+                <TabItem.Content>
+                    <StackPanel>
+                        <TextBlock >This is tab3</TextBlock>
+                    </StackPanel>                        
+                </TabItem.Content>
+            </TabItem>
+        </TabControl>            
+    </DockPanel>
+</Window>

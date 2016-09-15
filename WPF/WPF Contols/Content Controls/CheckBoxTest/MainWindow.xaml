@@ -1,0 +1,13 @@
+﻿<Window x:Class="CheckBoxTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <CheckBox Name="checkBoxProperties"
+                  IsChecked="{x:Null}"
+                  IsThreeState="True"
+                  >
+            CheckBox1
+        </CheckBox>
+    </Grid>
+</Window>

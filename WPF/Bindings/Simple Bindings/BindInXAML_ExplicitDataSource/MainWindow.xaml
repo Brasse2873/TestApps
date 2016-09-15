@@ -1,0 +1,10 @@
+﻿<Window x:Class="BindInXAML_ExplicitDataSource.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:thread="clr-namespace:System.Threading;assembly=mscorlib"
+        Title="MainWindow" Height="161.199" Width="287.618">
+    <Grid>
+        <!--Todo 1: Set source to an existing object (static property), and path to one of its properties -->
+        <TextBlock Text="{Binding Source={x:Static thread:Thread.CurrentThread}, Path=CurrentCulture }" />
+    </Grid>
+</Window>

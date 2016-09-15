@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfBinding_SourceAsResource.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        Title="MainWindow" 
+        Height="159.091" Width="525"
+        MinHeight="130" MinWidth="520"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="ToolWindow">
+    <Grid Margin="10"
+        DataContext="{x:Static system:Environment.OSVersion}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Platform" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"
+            Text="{Binding Platform}" />
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Service Pack" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"
+            Text="{Binding ServicePack}" />
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Version" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"
+            Text="{Binding Version}" />
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="VersionString" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"
+            Text="{Binding VersionString}" />
+
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="ToString" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"
+            Text="{Binding}" />
+
+    </Grid>
+</Window>

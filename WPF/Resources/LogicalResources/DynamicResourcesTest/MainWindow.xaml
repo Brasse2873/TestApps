@@ -1,0 +1,30 @@
+﻿<Window x:Class="DynamicResourcesTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <SolidColorBrush x:Key="winBrush" Color="Yellow"/>
+    </Window.Resources>
+    <StackPanel>
+        <StackPanel.Resources>
+            <SolidColorBrush x:Key="stackpanelBrush" Color="Red"  />
+        </StackPanel.Resources>
+        <Button Content="Change brush property"
+                Background="{DynamicResource winBrush}"
+                Foreground="{DynamicResource stackpanelBrush}"
+                Click="ChangeBrushProperty"
+                >            
+        </Button>
+        <Button Content="Change brush"
+                Background="{DynamicResource winBrush}"
+                Foreground="{DynamicResource stackpanelBrush}"
+                Click="ChangeBrush"
+                >
+        </Button>
+        <Button Name="button3"
+                Click="SetResourceProgrammatically">
+            Button3
+        </Button>
+
+    </StackPanel>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window x:Class="BublingEventTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525"
+        TextBoxBase.TextChanged="Window_TextChanged_1"
+        TextBoxBase.PreviewKeyDown="Window_PreviewKeyDown_1">
+        <StackPanel TextBoxBase.TextChanged="StackPanel_TextChanged_1">
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label>Enter text:</Label>
+                <TextBox TextChanged="TextBox_TextChanged_1" Width="200"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <RadioButton Name="optHandleInTextBox" Margin="10">Raise in TextBox</RadioButton>
+            <RadioButton Name="optHandleInStackFrame" Margin="10">Raise in StackFrame</RadioButton>
+            <RadioButton Name="optHandleInWindows" Margin="10">Raise in Windows</RadioButton>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" >
+                <Label>Raised by:</Label>
+                <TextBlock Name="txtEvents"></TextBlock>
+            </StackPanel>
+        </StackPanel>
+</Window>

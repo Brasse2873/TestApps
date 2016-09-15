@@ -1,0 +1,46 @@
+﻿<Window x:Class="ToolBarTrayTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <DockPanel LastChildFill="False">
+        <ToolBarTray Name="ToolBarTrayProperies" DockPanel.Dock="Left"
+                 
+                     Background="AntiqueWhite"
+                     IsLocked="False"
+                     Orientation="Vertical">
+        
+            <ToolBar>
+                <Button>
+                    <Image Source="Resources/a.ico"/>
+                </Button>
+            </ToolBar>
+            <ToolBar>
+                <Button>
+                    <Image Source="Resources/b.ico"/>
+                </Button>
+            </ToolBar>
+
+        </ToolBarTray>
+
+
+
+        <ToolBarTray  DockPanel.Dock="Top"
+                     Background="Aqua"
+                     IsLocked="False"
+                     Orientation="Horizontal">
+
+            <ToolBar>
+                <Button>
+                    <Image Source="Resources/c.ico"/>
+                </Button>
+            </ToolBar>
+            <ToolBar>
+                <Button>
+                    <Image Source="Resources/b.ico"/>
+                </Button>
+            </ToolBar>
+
+        </ToolBarTray>
+
+    </DockPanel>
+</Window>

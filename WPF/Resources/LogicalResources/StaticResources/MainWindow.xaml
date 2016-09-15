@@ -1,0 +1,33 @@
+﻿<Window x:Class="StaticResources.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        Title="MainWindow" Height="350" Width="525"
+        >
+    <Window.Resources>
+        <SolidColorBrush x:Key="windowsBrush" Color="Azure"/>
+    </Window.Resources>
+        
+    <StackPanel >
+        <StackPanel.Resources>
+            <SolidColorBrush x:Key="stackpanelBrush" Color="Coral"/>
+        </StackPanel.Resources>
+
+        <Button Name="ChangeBgColor"
+                Content="Change backgroud color to current resource" 
+                Background="{StaticResource windowsBrush}"
+                Foreground="{StaticResource stackpanelBrush}"
+                Width="{StaticResource appButtonWidth}"
+                Click="ChangeBgColor_Click"
+                >
+        </Button>
+        <Button Name="ChangeBgBrush"
+                Content="Change backgroud brush of current resource" 
+                Background="{DynamicResource windowsBrush}"
+                Foreground="{StaticResource stackpanelBrush}"
+                Width="{StaticResource appButtonWidth}"
+                Click="ChangeBgBrush_Click"
+                >
+        </Button>        
+     </StackPanel>
+</Window>
