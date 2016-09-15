@@ -1,0 +1,65 @@
+
+Declaration: (Tillräckligt med info för att kompiera)
+announcing the existence and properties of the element.
+When you declare a variable, a function, or even a class all you are doing 
+is saying: there is something with this name, and it has this type.
+
+Definition: (All info som kompilatorn behöver)
+Defining something means providing all of the necessary information to create 
+that thing in its entirity.
+declarations that provide the actual implementation in the 
+case of functions, and initialization in the case of variables.
+Allocates memory and tells where to store (heap/stack).
+
+
+
+Declaration
+===========
+Function
+---------
+exter int func();
+int func();
+
+
+Variable
+---------
+exter int var; 
+
+
+Class
+-----
+class MyClass;
+
+
+Class members
+-------------
+func();
+int field;
+
+
+
+Definition
+==========
+
+Function: Defining a function means providing a function body
+---------
+int func() {};
+
+
+Variable
+---------
+int var;		Declared and defined
+char var2 = '1';	Declared and defined
+
+
+Class:  defining a class means giving all of the methods of the class and the fields.
+-----
+class Class
+{
+	int field;
+}
+
+
+Class members
+-------------
+class::func() {}
