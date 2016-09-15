@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cpp_Performace_IntDoubleStrCmp", "Cpp_Performace_IntDoubleStrCmp.vcxproj", "{046554D0-B24E-4FA0-A739-9E29BAC169FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{046554D0-B24E-4FA0-A739-9E29BAC169FF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{046554D0-B24E-4FA0-A739-9E29BAC169FF}.Debug|Win32.Build.0 = Debug|Win32
+		{046554D0-B24E-4FA0-A739-9E29BAC169FF}.Release|Win32.ActiveCfg = Release|Win32
+		{046554D0-B24E-4FA0-A739-9E29BAC169FF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
