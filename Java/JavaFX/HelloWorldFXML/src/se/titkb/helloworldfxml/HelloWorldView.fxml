@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.titkb.helloworldfxml.HelloWorldController">
+   <children>
+      <TextField fx:id="myTextField" layoutX="14.0" layoutY="14.0">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </TextField>
+      <Button layoutX="14.0" layoutY="196.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#myButtonAction" text="Button2" />
+      <Button layoutX="105.0" layoutY="196.0" mnemonicParsing="false" text="Button" />
+   </children>
+</Pane>
