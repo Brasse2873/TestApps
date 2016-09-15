@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Line Name="Line1">
+        <Top>0.42016cm</Top>
+        <Left>0.28787cm</Left>
+        <Height>0cm</Height>
+        <Width>6.15125cm</Width>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Line Name="Line2">
+        <Top>1.0287cm</Top>
+        <Left>0.28787cm</Left>
+        <Height>0cm</Height>
+        <Width>6.15125cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>Dashed</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Line Name="Line3">
+        <Top>1.79599cm</Top>
+        <Left>0.28787cm</Left>
+        <Height>0cm</Height>
+        <Width>6.15125cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>Dotted</Style>
+          </Border>
+        </Style>
+      </Line>
+      <Line Name="Line4">
+        <Top>2.43099cm</Top>
+        <Left>0.28787cm</Left>
+        <Height>0cm</Height>
+        <Width>6.15125cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+            <Width>10pt</Width>
+          </Border>
+        </Style>
+      </Line>
+      <Line Name="Line5">
+        <Top>3.35703cm</Top>
+        <Left>0.28787cm</Left>
+        <Height>0cm</Height>
+        <Width>6.15125cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Color>Red</Color>
+            <Style>Dotted</Style>
+            <Width>20pt</Width>
+          </Border>
+        </Style>
+      </Line>
+      <Rectangle Name="Rectangle1">
+        <ReportItems>
+          <Line Name="Line7">
+            <Top>0.55562cm</Top>
+            <Left>0.50271cm</Left>
+            <Height>0cm</Height>
+            <Width>3.51896cm</Width>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Line Name="Line8">
+            <Top>0.58208cm</Top>
+            <Left>4.02167cm</Left>
+            <Height>1.66688cm</Height>
+            <Width>0cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Line Name="Line9">
+            <Top>2.24896cm</Top>
+            <Left>4.02167cm</Left>
+            <Height>0cm</Height>
+            <Width>-3.59833cm</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+          <Line Name="Line10">
+            <Top>2.27542cm</Top>
+            <Left>0.50271cm</Left>
+            <Height>-1.71979cm</Height>
+            <Width>3.51896cm</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>Solid</Style>
+              </Border>
+            </Style>
+          </Line>
+        </ReportItems>
+        <KeepTogether>true</KeepTogether>
+        <Top>3.43641cm</Top>
+        <Left>8.11568cm</Left>
+        <Height>2.51354cm</Height>
+        <Width>5cm</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Rectangle>
+    </ReportItems>
+    <Height>3.57292in</Height>
+    <Style />
+  </Body>
+  <Width>6.5in</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>f5bd688f-65ac-4628-9668-42e7e7489f97</rd:ReportID>
+</Report>

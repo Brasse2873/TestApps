@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Rectangle", "Rectangle\Rectangle.rptproj", "{40D1FB41-462C-44EE-B4E1-15513AD2C883}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Line", "Line\Line.rptproj", "{4BC18C3D-D4BF-41B3-9A28-872B4D1D6011}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "Subreport", "Subreport\Subreport.rptproj", "{333260EE-4680-4DCE-B70A-4E37007FF634}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40D1FB41-462C-44EE-B4E1-15513AD2C883}.Debug|Default.ActiveCfg = Debug
+		{40D1FB41-462C-44EE-B4E1-15513AD2C883}.Debug|Default.Build.0 = Debug
+		{40D1FB41-462C-44EE-B4E1-15513AD2C883}.Debug|Default.Deploy.0 = Debug
+		{40D1FB41-462C-44EE-B4E1-15513AD2C883}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{40D1FB41-462C-44EE-B4E1-15513AD2C883}.DebugLocal|Default.Build.0 = DebugLocal
+		{40D1FB41-462C-44EE-B4E1-15513AD2C883}.DebugLocal|Default.Deploy.0 = DebugLocal
+		{40D1FB41-462C-44EE-B4E1-15513AD2C883}.Release|Default.ActiveCfg = Release
+		{40D1FB41-462C-44EE-B4E1-15513AD2C883}.Release|Default.Build.0 = Release
+		{40D1FB41-462C-44EE-B4E1-15513AD2C883}.Release|Default.Deploy.0 = Release
+		{4BC18C3D-D4BF-41B3-9A28-872B4D1D6011}.Debug|Default.ActiveCfg = Debug
+		{4BC18C3D-D4BF-41B3-9A28-872B4D1D6011}.Debug|Default.Build.0 = Debug
+		{4BC18C3D-D4BF-41B3-9A28-872B4D1D6011}.Debug|Default.Deploy.0 = Debug
+		{4BC18C3D-D4BF-41B3-9A28-872B4D1D6011}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{4BC18C3D-D4BF-41B3-9A28-872B4D1D6011}.DebugLocal|Default.Build.0 = DebugLocal
+		{4BC18C3D-D4BF-41B3-9A28-872B4D1D6011}.Release|Default.ActiveCfg = Release
+		{4BC18C3D-D4BF-41B3-9A28-872B4D1D6011}.Release|Default.Build.0 = Release
+		{4BC18C3D-D4BF-41B3-9A28-872B4D1D6011}.Release|Default.Deploy.0 = Release
+		{333260EE-4680-4DCE-B70A-4E37007FF634}.Debug|Default.ActiveCfg = Debug
+		{333260EE-4680-4DCE-B70A-4E37007FF634}.Debug|Default.Build.0 = Debug
+		{333260EE-4680-4DCE-B70A-4E37007FF634}.Debug|Default.Deploy.0 = Debug
+		{333260EE-4680-4DCE-B70A-4E37007FF634}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{333260EE-4680-4DCE-B70A-4E37007FF634}.DebugLocal|Default.Build.0 = DebugLocal
+		{333260EE-4680-4DCE-B70A-4E37007FF634}.Release|Default.ActiveCfg = Release
+		{333260EE-4680-4DCE-B70A-4E37007FF634}.Release|Default.Build.0 = Release
+		{333260EE-4680-4DCE-B70A-4E37007FF634}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
