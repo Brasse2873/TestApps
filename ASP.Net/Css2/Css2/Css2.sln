@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Css2", "E:\Utveckling Testprogram\ASP.Net\Css2\", "{9DB63789-1516-441E-BD5A-4B78F2E36771}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		Debug.AspNetCompiler.VirtualPath = "/Css2"
+		Debug.AspNetCompiler.PhysicalPath = "E:\Utveckling Testprogram\ASP.Net\Css2\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Css2\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Css2"
+		Release.AspNetCompiler.PhysicalPath = "E:\Utveckling Testprogram\ASP.Net\Css2\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Css2\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "65032"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DB63789-1516-441E-BD5A-4B78F2E36771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB63789-1516-441E-BD5A-4B78F2E36771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

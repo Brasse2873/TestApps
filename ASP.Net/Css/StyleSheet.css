@@ -1,0 +1,54 @@
+﻿body {
+}
+        h1
+        {
+            font-family: Impact;
+            font-size: xx-large;
+            font-variant: small-caps;
+            text-align: center;
+        }
+        h2
+        {
+            font-family: "Comic Sans MS";
+            font-size: small;
+            text-align: center;
+        }
+        #banner
+        {
+            height: 125px;
+            width: 780px;
+            background-color: #00FFFF;
+        }
+        #search
+        {
+            top: 62px;
+            left: 582px;
+            position: absolute;
+            height: 30px;
+            width: 202px;
+        }
+        #leftsidebar
+        {
+            width: 200px;
+            float: left;
+        }
+        #rightsidebar
+        {
+            width: 290px;
+            float: right;
+        }
+        #maincontent
+        {
+            margin-left: 210px;
+            margin-right: 300px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+    #footer
+{
+    clear: both;
+}

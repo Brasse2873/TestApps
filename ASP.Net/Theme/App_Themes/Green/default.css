@@ -1,0 +1,46 @@
+﻿body {
+}
+
+td.title 
+{
+  font-size: 1em;
+  text-align: center;
+  font-family: verdana;
+  font-size: x-large;
+  font-weight: bolder;
+  color: Teal;
+}
+
+table.header
+{
+  background-color: Lime;
+}
+
+h1
+{
+  font-size: large;
+  color: Green;
+}
+
+h2
+{
+  font-family: Verdana;
+  font-size: medium;
+  margin-top: 30;
+  color: Green;
+}
+
+p
+{
+  font-family: Verdana;
+  font-size: small;
+  color: Teal;
+  text-align: left;
+}
+
+hr
+{
+  border: 0;
+  border-top: 2px solid Aqua;
+  height: 2px;
+}
