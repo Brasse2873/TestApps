@@ -1,0 +1,5 @@
+$ file = "sys$login:login.com"
+$ write sys$output "Name      = ''F$parse(file,,,"name")' "
+$ write sys$output "Type      = ''F$parse(file,,,"type")' "
+$ write sys$output "Directory = ''F$parse(file,,,"directory")' "
+$ write sys$output "Device    = ''F$parse(file,,,"device")' "
