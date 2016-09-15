@@ -1,0 +1,11 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="CommonMovedSSISCreatedDir"
+  DTS:DTSID="{DD96B7A8-8507-439C-94B5-B54097F857EE}"
+  DTS:CreationName="FILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:FileUsageType="2"
+      DTS:ConnectionString="C:\Temp\MovedSSISCreatedDir" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

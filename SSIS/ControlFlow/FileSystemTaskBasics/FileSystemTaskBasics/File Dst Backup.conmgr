@@ -1,0 +1,11 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="File Dst Backup"
+  DTS:DTSID="{C12B16F4-2DD1-4722-959C-E9B5FFF25841}"
+  DTS:CreationName="FILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:FileUsageType="1"
+      DTS:ConnectionString="C:\Temp\SSISDst\Backup New Text Document.txt" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

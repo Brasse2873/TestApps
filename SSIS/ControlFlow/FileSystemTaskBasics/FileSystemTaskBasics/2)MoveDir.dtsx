@@ -1,0 +1,84 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/18/2016 8:39:22 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="TITKB-BOKF"
+  DTS:CreatorName="TITKB-BOKF\Mikael"
+  DTS:DTSID="{3B34B081-90A7-407A-8C17-E2BAAB5EC1BD}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="12.0.2430.0"
+  DTS:LocaleID="1053"
+  DTS:ObjectName="2 MoveDir"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{4D71ADBE-FD4A-4790-92A2-78687D5C5BD2}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MovedSSISCreatedDir]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{5FB79EC9-AEB8-4165-AA72-235EBEA50286}"
+      DTS:ObjectName="MovedSSISCreatedDir">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="3"
+          DTS:ConnectionString="c:\Temp\MovedSSISCreatedDir" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SSISCreatedDir]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{76803617-E504-48BA-B326-3FCC848EF135}"
+      DTS:ObjectName="SSISCreatedDir">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="2"
+          DTS:ConnectionString="C:\Temp\SSISCreatedDir" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\FST Move SSISCreateDir to MovedSSISCreatedDir"
+      DTS:CreationName="Microsoft.FileSystemTask"
+      DTS:Description="Move Dir from c to e"
+      DTS:DTSID="{FEB3DC0D-73EE-42F4-ABE9-F9A86EBD7B39}"
+      DTS:ExecutableType="Microsoft.FileSystemTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="FST Move SSISCreateDir to MovedSSISCreatedDir"
+      DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2016 RC3; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FileSystemData
+          TaskOperationType="MoveDirectory"
+          TaskOverwriteDestFile="True"
+          TaskSourcePath="{76803617-E504-48BA-B326-3FCC848EF135}"
+          TaskDestinationPath="{5FB79EC9-AEB8-4165-AA72-235EBEA50286}" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql12">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="315,42"
+          Id="Package\FST Move SSISCreateDir to MovedSSISCreatedDir"
+          TopLeft="5.5,5.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

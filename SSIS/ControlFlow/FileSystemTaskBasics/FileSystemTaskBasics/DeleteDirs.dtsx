@@ -1,0 +1,113 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/18/2016 8:35:19 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="TITKB-BOKF"
+  DTS:CreatorName="TITKB-BOKF\Mikael"
+  DTS:DTSID="{0BF8532D-4F2F-4131-8914-4789F2B2E33D}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="12.0.2430.0"
+  DTS:LocaleID="1053"
+  DTS:ObjectName="DeleteDirs"
+  DTS:PackageType="5"
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{CC90DB62-64DC-425E-BB35-6ECCE79A21DE}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SSISCreatedDir]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{7339A172-A1AF-41B4-B41D-5EBD18F770BA}"
+      DTS:ObjectName="SSISCreatedDir">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="2"
+          DTS:ConnectionString="C:\Temp\SSISCreatedDir" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\FSO Delete Dir CopyOfMovedSSISCreatedDir"
+      DTS:CreationName="Microsoft.FileSystemTask"
+      DTS:Description="File System Task"
+      DTS:DTSID="{B76BB7A3-867F-436E-8003-623C242FAB04}"
+      DTS:ExecutableType="Microsoft.FileSystemTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="FSO Delete Dir CopyOfMovedSSISCreatedDir"
+      DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2016 RC3; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FileSystemData
+          TaskOperationType="DeleteDirectory"
+          TaskSourcePath="{4C3084F8-9FB7-4C1E-B0DA-9820BFB424B8}" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\FSO Delete MovedSSISCreatedDir"
+      DTS:CreationName="Microsoft.FileSystemTask"
+      DTS:Description="File System Task"
+      DTS:DTSID="{19C0F37A-7280-419F-9752-74B1293C90CE}"
+      DTS:ExecutableType="Microsoft.FileSystemTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="FSO Delete MovedSSISCreatedDir"
+      DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2016 RC3; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FileSystemData
+          TaskOperationType="DeleteDirectory"
+          TaskSourcePath="{DD96B7A8-8507-439C-94B5-B54097F857EE}" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\FST Delete Dir SSISCreatedDir"
+      DTS:CreationName="Microsoft.FileSystemTask"
+      DTS:Description="DeleteHardcodedDir"
+      DTS:DTSID="{F8B2AAD3-6C02-4C2B-80B4-C56E43A035CE}"
+      DTS:ExecutableType="Microsoft.FileSystemTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="FST Delete Dir SSISCreatedDir"
+      DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2016 RC3; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <FileSystemData
+          TaskOperationType="DeleteDirectory"
+          TaskSourcePath="{7339A172-A1AF-41B4-B41D-5EBD18F770BA}" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql12">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="291,42"
+          Id="Package\FSO Delete Dir CopyOfMovedSSISCreatedDir"
+          TopLeft="5.5,5.5" />
+        <NodeLayout
+          Size="239,42"
+          Id="Package\FSO Delete MovedSSISCreatedDir"
+          TopLeft="357.5,5.49999999999989" />
+        <NodeLayout
+          Size="224,42"
+          Id="Package\FST Delete Dir SSISCreatedDir"
+          TopLeft="657,5.49999999999989" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

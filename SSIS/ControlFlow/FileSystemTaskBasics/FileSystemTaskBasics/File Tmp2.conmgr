@@ -1,0 +1,11 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="File Tmp2"
+  DTS:DTSID="{49975902-4411-4C62-82FF-1765B3061105}"
+  DTS:CreationName="FILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:FileUsageType="1"
+      DTS:ConnectionString="C:\Temp\SSISTemp2\Renamed New Text Document.txt" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

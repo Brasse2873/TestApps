@@ -1,0 +1,11 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Dir Dst"
+  DTS:DTSID="{8B32C921-2D88-41D3-A44A-796E82C1867B}"
+  DTS:CreationName="FILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:FileUsageType="2"
+      DTS:ConnectionString="C:\Temp\SSISDst" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
