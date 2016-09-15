@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SortSearch_C", "SortSearch_C.vcxproj", "{3898380B-477F-4A1E-9C58-F77C7AB2845A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3898380B-477F-4A1E-9C58-F77C7AB2845A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3898380B-477F-4A1E-9C58-F77C7AB2845A}.Debug|Win32.Build.0 = Debug|Win32
+		{3898380B-477F-4A1E-9C58-F77C7AB2845A}.Release|Win32.ActiveCfg = Release|Win32
+		{3898380B-477F-4A1E-9C58-F77C7AB2845A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
