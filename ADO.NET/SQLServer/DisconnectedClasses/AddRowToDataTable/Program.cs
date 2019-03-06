@@ -8,6 +8,35 @@ using System.Data;
 
 namespace AddRowToDataTable
 {
+    class MyDataTable : DataTable
+    {
+        public MyDataTable()
+        {
+            CreateTable();
+        }
+
+        private void CreateTable()
+        {
+            TableName = "TestTable";
+            AddColumns();
+        }
+
+        private void AddColumns()
+        {
+            Columns.Add(new DataColumn("ID", typeof(Int64)));
+            Columns.Add(new DataColumn("Name"));
+
+            //Create unique id for primary key
+            DataColumn col = Columns["ID"];
+            col.Unique = true;
+            col.AllowDBNull = false;
+            col.AutoIncrement = true;
+            col.AutoIncrementSeed = -1;
+            col.AutoIncrementStep = -1;
+            PrimaryKey = new DataColumn[] { col };
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -34,32 +63,4 @@ namespace AddRowToDataTable
 
 
 
-    class MyDataTable : DataTable
-    { 
-        public MyDataTable()
-        { 
-            CreateTable();
-        }        
-
-        private void CreateTable()
-        {
-            TableName = "TestTable";
-            AddColumns();
-        }
-
-        private void AddColumns()
-        {
-            Columns.Add( new DataColumn("ID",typeof(Int64)));
-            Columns.Add( new DataColumn("Name"));
-
-            //Create unique id for primary key
-            DataColumn col = Columns["ID"];
-            col.Unique= true;
-            col.AllowDBNull= false;
-            col.AutoIncrement = true;
-            col.AutoIncrementSeed = -1;
-            col.AutoIncrementStep = -1;
-            PrimaryKey = new DataColumn[] { col };
-        }
-    }
 }
